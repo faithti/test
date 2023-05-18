@@ -7,10 +7,10 @@ To install the TI-STACK, follow these steps:
 
    Navigate to the folder where Chart.yaml is located and execute the following commands:
    
-   
-   > helm dependency update
-   > helm package .
-   
+   ```
+   helm dependency update
+   helm package .
+   ```
    
    This will create a .tgz file, which you will use to install the ti-stack.
 
