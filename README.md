@@ -1,7 +1,6 @@
 Values for telegraf:
 
-<pre> 
-```yaml
+```
 telegraf:
   name: telegraf
   replicaCount: 1
@@ -9,4 +8,3 @@ telegraf:
     repo: "telegraf"
     tag: "1.26-alpine"
 ```
-</pre>
