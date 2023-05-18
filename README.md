@@ -26,15 +26,15 @@ To connect to InfluxDB, use the Kubernetes service's external IP address and por
 
 Check the username, password, and token by executing the following commands:
 
-   ```shell
-   kubectl exec -it ti-stack-influxdb2-0 -n monitoring -- /bin/bash -c 'env | grep $DOCKER_INFLUXDB_INIT_USERNAME'
-   ```
-   ```shell
-   kubectl exec -it ti-stack-influxdb2-0 -n monitoring -- /bin/bash -c 'env | grep $DOCKER_INFLUXDB_INIT_PASSWORD'
-   ```
-   ```shell
-   kubectl exec -it ti-stack-influxdb2-0 -n monitoring -- /bin/bash -c 'env | grep $DOCKER_INFLUXDB_INIT_ADMIN_TOKEN'
-   ```
+```shell
+kubectl exec -it ti-stack-influxdb2-0 -n monitoring -- /bin/bash -c 'env | grep $DOCKER_INFLUXDB_INIT_USERNAME'
+```
+```shell
+kubectl exec -it ti-stack-influxdb2-0 -n monitoring -- /bin/bash -c 'env | grep $DOCKER_INFLUXDB_INIT_PASSWORD'
+```
+```shell
+kubectl exec -it ti-stack-influxdb2-0 -n monitoring -- /bin/bash -c 'env | grep $DOCKER_INFLUXDB_INIT_ADMIN_TOKEN'
+```
 
 In Grafana, set InfluxDB as a datasource.
 
